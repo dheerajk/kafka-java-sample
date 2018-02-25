@@ -38,7 +38,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.example.kafka.Producer</mainClass>
+                            <mainClass>com.example.kafka.MessageBroadcaster</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
