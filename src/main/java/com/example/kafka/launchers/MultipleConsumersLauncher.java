@@ -1,8 +1,10 @@
-package com.example.kafka;
+package com.example.kafka.launchers;
+
+import com.example.kafka.MessageConsumer;
 
 import java.util.Scanner;
 
-public class SingleConsumerLauncher {
+public class MultipleConsumersLauncher {
 
     private static final String EXIT = "quit";
 
@@ -21,5 +23,4 @@ public class SingleConsumerLauncher {
         System.out.println("Stopping consumer .....");
         messageConsumer.join();
     }
-
 }

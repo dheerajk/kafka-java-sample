@@ -11,11 +11,11 @@ public class MessageBroadcaster {
     private final String message;
     private final Producer producer;
 
-    MessageBroadcaster() {
+    public MessageBroadcaster() {
         this("default message");
     }
 
-    MessageBroadcaster(String message) {
+    public MessageBroadcaster(String message) {
         this.producer = new KafkaProducer(ProducerProperties.get());
         this.message = message;
     }

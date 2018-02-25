@@ -1,4 +1,6 @@
-package com.example.kafka;
+package com.example.kafka.launchers;
+
+import com.example.kafka.MessageBroadcaster;
 
 import java.util.Scanner;
 
