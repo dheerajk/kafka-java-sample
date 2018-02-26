@@ -10,14 +10,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 ```
 Kafka
-```
-```
 Java 8
-```
-```
 Ubuntu
-```
-```
 IntelliJ
 ```
 
