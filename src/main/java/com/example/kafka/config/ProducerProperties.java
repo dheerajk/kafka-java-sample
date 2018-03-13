@@ -9,7 +9,7 @@ import static org.apache.kafka.clients.producer.ProducerConfig.VALUE_SERIALIZER_
 final public class ProducerProperties {
 
     private static final String HOST = "localhost:9092";
-    private static final String KEY_SERIALIZER = "org.apache.kafka.common.serialization.ByteArraySerializer";
+    private static final String KEY_SERIALIZER = "org.apache.kafka.common.serialization.StringSerializer";
     private static final String VALUE_SERIALIZER = "org.apache.kafka.common.serialization.StringSerializer";
 
     public static Properties get() {

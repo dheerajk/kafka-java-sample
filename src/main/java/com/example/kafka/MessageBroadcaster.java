@@ -13,7 +13,7 @@ import java.util.TimerTask;
 
 public class MessageBroadcaster {
 
-    private static final String TOPIC_NAME = "test";
+    private static final String TOPIC_NAME = "mindgate-upi-transaction-job";
     private final String message;
     private final Producer producer;
     private final String name;
@@ -54,9 +54,12 @@ public class MessageBroadcaster {
     }
 
     public void broadcast(String customMessage) {
-        System.out.println(dateFormater.format(new Date()) + " Producer name: " + name + " Broadcasting message "
-                + customMessage);
         ProducerRecord<String, String> record = new ProducerRecord<String, String>(TOPIC_NAME, customMessage);
+        producer.send(record);
+    }
+
+    public void broadcast(String key, String value) {
+        ProducerRecord<String, String> record = new ProducerRecord<String, String>(TOPIC_NAME, key, value);
         producer.send(record);
     }
 
