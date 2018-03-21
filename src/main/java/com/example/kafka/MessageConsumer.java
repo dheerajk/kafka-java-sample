@@ -17,7 +17,7 @@ import java.util.Date;
 
 public class MessageConsumer extends Thread {
 
-    private static final String TOPIC_NAME = "mindgate-upi-transaction-result";
+    private static final String TOPIC_NAME = "result-response";
     private static final long POLLING_TIMEOUT = 500;
     private final KafkaConsumer<String, String> kafkaConsumer;
     private static final DateFormat dateFormater = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");

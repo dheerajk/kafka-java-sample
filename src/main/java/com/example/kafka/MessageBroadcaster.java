@@ -13,7 +13,7 @@ import java.util.TimerTask;
 
 public class MessageBroadcaster {
 
-    private static final String TOPIC_NAME = "mindgate-upi-transaction-job";
+    private static final String TOPIC_NAME = "transaction-request";
     private final String message;
     private final Producer producer;
     private final String name;
